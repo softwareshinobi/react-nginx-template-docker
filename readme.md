@@ -1,10 +1,12 @@
 # react-nginx-docker-template
 
-A production-ready boilerplate for modern single-page applications. This repository provides a clean, multi-stage Docker setup that builds and serves a React application with a lightweight Nginx server.
+This repository provides a clean Docker setup for serving a React application with a lightweight Nginx server, specifically configured to solve common routing issues.
 
 ## Overview
 
-This project is designed to streamline the deployment of React applications to a Docker environment. By using a multi-stage Dockerfile, it separates the build process from the final image, resulting in a small, secure, and highly efficient container. The custom Nginx configuration is specifically optimized to handle client-side routing, preventing "404 Not Found" errors on direct URL access.
+This project provides a pre-configured Nginx image that is specifically optimized to solve a common problem with single-page applications: 404 errors on page refreshes and direct URL access.
+
+By using this image, you can ensure that your application’s client-side routing works as expected in a production environment, sending all unhandled requests back to your main index.html file.
 
 ## Getting Started
 
