@@ -34,7 +34,9 @@ This command creates a new Docker image named your-custom-nginx that is configur
 
 Finally, you can run a container from your new image and serve your React application's built files. The -v flag creates a volume mount, linking your local build directory to the Nginx server's document root inside the container.
 
+```
 docker run -p 8080:80 -v /path/to/your/react/project/dist:/usr/share/nginx/html your-custom-nginx
+```
 
 Note: Replace /path/to/your/react/project/dist with the actual absolute path to your React app's dist or build folder.
 
